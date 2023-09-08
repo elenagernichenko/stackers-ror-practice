@@ -10,7 +10,7 @@ if response.code != 200
   else
     doc = Nokogiri::HTML(response.body)
         
-    puts 'вы программитс? (Д/н)'
+    puts 'вы программист? (Д/н)'
     # chomp удаляет символ перевода строки (\n)
     # downcase преобразование в нижний регист
     user_input = gets.chomp.downcase
