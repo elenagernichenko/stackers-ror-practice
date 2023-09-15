@@ -7,7 +7,7 @@ response = HTTParty.get(url)
 
 if response.code != 200
     puts 'не удалось получить данные с веб-сайта'
-  else
+else
     doc = Nokogiri::HTML(response.body)
         
     puts 'вы программист? (Д/н)'
